@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "UserManagement";
+}
+<link rel="stylesheet" href="~/css/userManagement.css" />
+<script src="~/lib/custom/userManage.js"></script>
+
+
+<h2>User Management</h2>
+&nbsp;
+<br/>
+<div id="idUserList" class="form-group col-md-6">
+    <div class="list header">Name</div><div class="list header">Date of birth</div>
+</div>
+<div class="form-group col-md-6">
+    <form>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="idName">Name:</label>
+                <input type="text" class="form-control" id="idName" name="Name">
+            </div>
+            <div class="form-group">
+                <label for="idDob">Date of birth:</label>
+                <input type="text" class="form-control datepicker minimumSize" id="idDob" name="DateOfBirth" readonly="readonly">
+            </div>
+            <div class="form-group">
+                <input type="button" class="btn btn-primary" id="idsave" value="Save" onclick="fnSaveDetails()" />
+            </div>
+        </div>
+    </form>
+</div>
